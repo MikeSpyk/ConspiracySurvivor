@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &95718338606623018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 95718338606623019}
+  - component: {fileID: 95718338606623016}
+  m_Layer: 0
+  m_Name: Entity Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &95718338606623019
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95718338606623018}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &95718338606623016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95718338606623018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04421dda5d1243a4485e6417767ebe85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_clientPlayerViewDistance: 2000
+  m_clientInstancingDistanceMax: 100
+  m_serverPlayerViewDistanceMin: 100
+  m_serverPlayerViewDistanceMax: 700
+  m_serverPlayerDistantViewDistanceMax: 2000
+  m_entityUIDCounter: 0
+  m_activeEntitiesCountOutput: 0
+  m_culledEntitiesCountOutput: 0
+  m_distantEntitiesCountOutput: 0
+  m_entityPrefabs:
+  - {fileID: 380325866766691945, guid: 7c50d700750a15d469ab4a6d7d9f14a7, type: 3}
+  - {fileID: 625338131075969769, guid: 3e3d88fa6528ab44b9a190c40687a6d5, type: 3}
+  - {fileID: 4283746939784865435, guid: 713a9b2a1aeca2d4a880912d76632a27, type: 3}
+  - {fileID: 3782831013079153548, guid: a7761e7525aa4a5439ca418f831fb19d, type: 3}
+  - {fileID: 7967545034541955686, guid: 6d7b46534bd3553488de242239d2ab61, type: 3}
+  - {fileID: 1549416562819968, guid: 6def2cf8e452f5548b936250f370c574, type: 3}
+  - {fileID: 73782844467366156, guid: 1034a113a9a6f4f48bcaeccb4e6451c0, type: 3}
+  - {fileID: 658921954347553586, guid: 2cbd6d0bd232d0548ade0aef365d2f45, type: 3}
+  - {fileID: 6591430463446642727, guid: c88178a9ff819344ba41377b91bb4f6c, type: 3}
+  - {fileID: 4377306849366664667, guid: 2efda8036ea76634c87d35d45246857a, type: 3}
+  - {fileID: 931233712269354153, guid: ad9164eb570c7a54d9ccb15ae5753f78, type: 3}
+  - {fileID: 669382532794429734, guid: a8f91adbbcad4cf498c45ea6a2a707cb, type: 3}
+  - {fileID: 5034356971293454882, guid: 314827e8a812b984bbcadf4607a018b1, type: 3}
+  - {fileID: 6028779400126933914, guid: 121a3d5c8f56323478caf00f1a9a8873, type: 3}
+  - {fileID: 733624850233749626, guid: e3a02c4d4e910bf4e92d02f3f46c2fec, type: 3}
+  - {fileID: 4972109438177284930, guid: 605173aff24d9fb4d9802f4ddde17e0d, type: 3}
+  - {fileID: 9206259519578830275, guid: 8bb3b888c1aed434f8acf35e84b919a1, type: 3}
+  - {fileID: 4389500591374164713, guid: add73fbb382296a4d850249a7677c2b3, type: 3}
+  - {fileID: 1238482189419449691, guid: 8dcb09afc877d8847a972078a6945b9a, type: 3}
+  - {fileID: 5991193600129737976, guid: cfc0c6002e42a354987f529b5beefa23, type: 3}
+  m_distantEntitesPrefabs:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 8113834171378824291, guid: 1514baf9daf379043af902b3c41d5239, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_entityHideInHierarchy: 0000010101000000000000000000010101000001
+  m_itemDropHeight: 1
+  m_itemDropForward: 0.65
+  m_itemDropSpeed: 100
+  m_localClientDistantInstancing: 1
+  m_recomputeHideInHierarchy: 0
+  DEBUG_showWorldGrid: 0
+  DEBUG_showVisibleEntityFieldsGrid: 0

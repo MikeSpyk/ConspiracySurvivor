@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 4faa27d193aa13a42b33d547e55e38fd
+timeCreated: 1524159627
+licenseType: Free
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _ScaleTex: {fileID: 10305, guid: 0000000000000000f000000000000000, type: 0}
+  - _GrassTex: {fileID: 2800000, guid: 13fd3dd52bf157845864087bf321dbff, type: 3}
+  - _RockTex: {fileID: 2800000, guid: 337ac93e12665eb4ba14cd1b0ca57bf3, type: 3}
+  - _SnowTex: {fileID: 2800000, guid: cfde4861149cb6d4e8be624968d24bac, type: 3}
+  - _BeachSandTex: {fileID: 2800000, guid: ef1fbc9bae2718d4a8dbe2baaa01399c, type: 3}
+  - _UnderwaterTex: {fileID: 2800000, guid: c2d26b8332bc57340814c9dcbb8b5485, type: 3}
+  - _DeadGrassTex: {fileID: 2800000, guid: 13fd3dd52bf157845864087bf321dbff, type: 3}
+  - _DirtTex: {fileID: 2800000, guid: c31bd8a6588b4ae4abb8f966e7307003, type: 3}
+  - _ForestTex: {fileID: 2800000, guid: e5bdfc3501c76e542bf68ff5e1c84f67, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

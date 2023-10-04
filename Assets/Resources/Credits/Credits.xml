@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Credits xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="urn:ehd/001">
+	<Category Text="Developers">
+		<Developer Name="Mike Spykermann" Roles="Programmer" />
+		<Developer Name="Dennis Hanstein" Roles="Programmer" />
+		<Developer Name="Jens Hidien" Roles="Leveldesigner" />
+	</Category>
+	<Category Text="3rd-Party">
+		<Asset Type="Texture" AssetName="" FolderName="ADG_Textures" Creator=""/>
+		<Asset Type="Model" AssetName="Ammo Crate Wood Ammunition Box" FolderName="ammo_box" Creator="MyxerMan"/>
+		<Asset Type="Model" AssetName="" FolderName="Arms" Creator=""/>
+		<Asset Type="Model" AssetName="Chainlink Fences" FolderName="Assets_FenceChained" Creator="Kobra Game Studios"/>
+		<Asset Type="Model" AssetName="Bulk Container" FolderName="Bulk_Container" Creator="ESsplashkid"/>
+		<Asset Type="Texture" AssetName="" FolderName="Concrete textures pack" Creator=""/>
+		<Asset Type="Model" AssetName="PBR Cardboard Box" FolderName="CrowArt - PBR Cardboard Box" Creator="Crow Art"/>
+		<Asset Type="Model" AssetName="Fallen Tree Barrier - Free" FolderName="Fallen Tree Barrier - FREE" Creator="Professional 3D Captured Objects - Game Ready"/>
+		<Asset Type="Model" AssetName="Free SpeedTrees Package" FolderName="Free_SpeedTrees" Creator="SpeedTree®"/>
+		<Asset Type="Texture" AssetName="Grass And Flowers Pack 1" FolderName="Grass And Flowers Pack 1" Creator="Vladislav Pochezhertsev"/>
+		<Asset Type="Model" AssetName="Modern Russian Assault Rifle" FolderName="Modern Russian Assault Rifle" Creator="Perlind Arts"/>
+		<Asset Type="Texture" AssetName="Natural Tiling Textures" FolderName="NaturalTilingTextures" Creator="Terramorph Workshop"/>
+		<Asset Type="Texture/Model" AssetName="Nature Starter Kit 2" FolderName="NatureStarterKit2" Creator="Shapes"/>
+		<Asset Type="Texture" AssetName="Grounds Materials Sample - Photoscanned" FolderName="Photoscanned Grounds Materials Sample" Creator="Mikołaj Spychał"/>
+		<Asset Type="Model" AssetName="SciFi Enemies and Vehicles" FolderName="PopupAsylum" Creator="Popup Asylum"/>
+		<Asset Type="Texture" AssetName="Prototype Materials Pack" FolderName="Prototype Materials" Creator="Burak Taban"/>
+		<Asset Type="Texture" AssetName="QS Materials Nature - Pack Grass vol.2" FolderName="QS" Creator="Quadrante Studio"/>
+		<Asset Type="Texture" AssetName="" FolderName="rock_01" Creator=""/>
+		<Asset Type="Sound" AssetName="Water Splash Pack" FolderName="Rocklynn Productions - Water Splash Pack" Creator="Rocklynn Productions"/>
+		<Asset Type="Models" AssetName="" FolderName="Rocks Pack" Creator=""/>
+		<Asset Type="" AssetName="" FolderName="SampleScenes" Creator=""/>
+		<Asset Type="Sound" AssetName="Free Sound FX" FolderName="SoundBits_FreeSFX" Creator="SoundBits"/>
+		<Asset Type="Effect" AssetName="Screen Space Multiple Scattering" FolderName="SSMS-master" Creator="Keijiro Takahashi"/>
+		<Asset Type="Texture" AssetName="Surfaces Lite" FolderName="Surfaces Lite" Creator="LowPolyMan"/>
+		<Asset Type="Sounds" AssetName="Weapons of Choice - FREE" FolderName="Weapons of Choice FREE - Komposite Sound" Creator="Komposite Sound"/>
+		<Asset Type="Texture" AssetName="Wewe Free Game Icons" FolderName="WeweFreeGameIcons" Creator="Wewejune"/>
+		<Asset Type="Sounds" AssetName="Ambience, Seaside Waves, Close, A.wav" FolderName="400632__inspectorj__ambience-seaside-waves-close-a" Creator="InspectorJ"/>
+		<Asset Type="Sounds" AssetName="sea gulls.wav" FolderName="seaguls" Creator="Snapper4298"/>
+		<Asset Type="Sounds" AssetName="porto_pigeons_flapping_32.wav" FolderName="seaguls" Creator="mhusinsky"/>
+		<Asset Type="Sounds" AssetName="20080320.mysterious.traveler.wav" FolderName="seaguls" Creator="dobroide"/>
+		<Asset Type="Sounds" AssetName="Horror Sound Effects Library » Stab_Knife_00.wav" FolderName="270476__littlerobotsoundfactory__stab-knife-00" Creator="LittleRobotSoundFactory"/>
+		<Asset Type="Sounds" AssetName="footstep on gravel.aif" FolderName="footstepsSounds" Creator="nextmaking"/>
+		<Asset Type="Sound" AssetName="Heavy Thunder Strike - no Rain - QUADRO.wav" FolderName="Heavy Thunder Strike" Creator="BlueDelta"/>
+		<Asset Type="Sound" AssetName="260435__roganderrick__metal-impact-ceramic-piece-in-sink_2.wav" FolderName="impacts" Creator="RoganDerrick"/>
+		<Asset Type="Sound" AssetName="386228__ldezem__wood-wood-on-wood-1-stereo.wav" FolderName="impacts" Creator="ldezem"/>
+		<Asset Type="Models" AssetName="Low Poly Props Pack" FolderName="_Pack" Creator="Indie_G"/>
+		<Asset Type="Sound" AssetName="319203__worthahep88__foot-drag-dirt-6.wav" FolderName="impacts" Creator="worthahep88"/>
+		<Asset Type="Sound" AssetName="80928__bennstir__door-slam-1.wav" FolderName="door" Creator="bennstir"/>
+		<Asset Type="Sound" AssetName="320386__yadronoff__wooden-door.wav" FolderName="door" Creator="yadronoff"/>
+	</Category>
+</Credits>

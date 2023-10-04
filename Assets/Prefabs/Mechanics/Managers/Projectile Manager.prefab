@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1218590416978104
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4668366622788164}
+  - component: {fileID: 114766545449057982}
+  m_Layer: 0
+  m_Name: Projectile Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4668366622788164
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218590416978104}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114766545449057982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218590416978104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e63c16219897c148ac349599613a0f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_weaponsPrefabs:
+  - {fileID: 1543238130177648084, guid: d9c15eecc56ed9446bdb24ac4845ee82, type: 3}
+  - {fileID: 1546391222730002144, guid: 35acb692f3a0d2b40915803dd69a6378, type: 3}
+  m_trailObject_prefab: {fileID: 1147247112665134, guid: 005f3182b3a272e48a76453fd0c16112,
+    type: 3}
+  m_projektileMaxLifetime: 30
+  m_rayCastHitCacheSize: 100
+  m_server_sendProjectileUpdateRate: 1
+  m_minDistanceBeforeTrailVisible: 10
+  m_hideTrailsHirachy: 1
+  m_noCache: 0
+  m_DrawHitRay: 0
+  m_hitRayColor: {r: 1, g: 0, b: 0, a: 1}
+  m_DrawStartRay: 0
+  m_StartRayColor: {r: 0, g: 1, b: 0, a: 1}
+  m_trainTrajectoryNN: 0
+  m_saveTrajectoryNNGenome: 0
+  m_trainTrajectoryGenMemeberCount: 100
+  m_trainTrajectoryBestFitness: 0
+  m_trainTrajectorySaveCount: 100
+  m_trainTrajectoryMutationsCount: 10
+  m_trainTrajectoryMutationsShare: 0.5
+  m_trainTrajectoryMix: 0
+  m_trainTrajectoryDiversity: 0
+  m_trainTrajectoryDiversityWeight: 1
+  m_trainTrajectoryTestVeryBest: 0

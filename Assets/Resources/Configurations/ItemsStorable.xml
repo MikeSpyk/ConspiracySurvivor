@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ItemsStorable xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="urn:ehd/001">
+	 <!-- ItemType: Default = 0, NormalGun = 1, Simple = 2 -->
+
+	<StorableItem StorableItemName="StorableItem_AK12" ID="0" ItemType="1" GUIIconIndex ="1" WorldModel="1" StackSize ="1" LootRarity = "5" LootContainers = "0">
+		<Language name="English">
+			<Description Text="A great gun for testing purposes"/>
+			<DisplayName Text="AK 12"/>
+		</Language>
+		<Language name="German">
+			<Description Text="großartige waffe zum üben"/>
+			<DisplayName Text="AK 12"/>
+		</Language>
+	</StorableItem>
+
+	<StorableItem StorableItemName="StorableItem_Resource_Wood" ID="1" ItemType="2" GUIIconIndex ="2" WorldModel="1" StackSize ="1000" LootRarity = "0" LootContainers = "0">
+		<Language name="English">
+			<Description Text="a valuable resource"/>
+			<DisplayName Text="Wood"/>
+		</Language>
+		<Language name="German">
+			<Description Text="eine wichtige Resource"/>
+			<DisplayName Text="Holz"/>
+		</Language>
+	</StorableItem>
+	
+	<StorableItem StorableItemName="StorableItem_Ammo_Rifle" ID="2" ItemType="2" GUIIconIndex ="3" WorldModel="1" StackSize ="50" LootRarity = "1" LootContainers = "0">
+		<Language name="English">
+			<Description Text="a powerful ammunation for rifles"/>
+			<DisplayName Text="Rifle Ammo"/>
+		</Language>
+		<Language name="German">
+			<Description Text="kraftvolle Munition für Gewehre"/>
+			<DisplayName Text="Gewehrmunition"/>
+		</Language>
+	</StorableItem>
+	
+	<StorableItem StorableItemName="StorableItem_Ammo_Arrow" ID="3" ItemType="2" GUIIconIndex ="4" WorldModel="1" StackSize ="50" LootRarity = "1" LootContainers = "0">
+		<Language name="English">
+			<Description Text="ammunation for bows"/>
+			<DisplayName Text="Arrow"/>
+		</Language>
+		<Language name="German">
+			<Description Text="Munition für einen Bogen"/>
+			<DisplayName Text="Pfeil"/>
+		</Language>
+	</StorableItem>
+	
+	<StorableItem StorableItemName="StorableItem_Construction_Tool" ID="4" ItemType="2" GUIIconIndex ="5"  WorldModel="1" StackSize ="1" LootRarity = "2" LootContainers = "0">
+		<Language name="English">
+			<Description Text="a tool for builidung"/>
+			<DisplayName Text="Construction Tool"/>
+		</Language>
+		<Language name="German">
+			<Description Text="Ein Werkzeug um Gebäude zu errichten"/>
+			<DisplayName Text="Bau-Werkzeug"/>
+		</Language>
+	</StorableItem>
+
+  <StorableItem StorableItemName="StorableItem_Axt" ID="5" ItemType="2" GUIIconIndex ="6"  WorldModel="1" StackSize ="1" LootRarity = "2" LootContainers = "0">
+    <Language name="English">
+      <Description Text="a tool for harvesting wood"/>
+      <DisplayName Text="Axt"/>
+    </Language>
+    <Language name="German">
+      <Description Text="Ein Werkzeug um Holz abzubauen"/>
+      <DisplayName Text="Axt"/>
+    </Language>
+  </StorableItem>
+
+  <StorableItem StorableItemName="StorableItem_Pickaxe" ID="6" ItemType="2" GUIIconIndex ="7"  WorldModel="1" StackSize ="1" LootRarity = "2" LootContainers = "0">
+    <Language name="English">
+      <Description Text="a tool for harvesting stone"/>
+      <DisplayName Text="Pickaxe"/>
+    </Language>
+    <Language name="German">
+      <Description Text="Ein Werkzeug um Stein abzubauen"/>
+      <DisplayName Text="Pickaxe"/>
+    </Language>
+  </StorableItem>
+
+  <StorableItem StorableItemName="StorableItem_Stone" ID="7" ItemType="2" GUIIconIndex ="8"  WorldModel="1" StackSize ="1000" LootRarity = "0" LootContainers = "0">
+    <Language name="English">
+      <Description Text="a valuable resource"/>
+      <DisplayName Text="Stone"/>
+    </Language>
+    <Language name="German">
+      <Description Text="eine wichtige Resource"/>
+      <DisplayName Text="Stein"/>
+    </Language>
+  </StorableItem>
+
+  <StorableItem StorableItemName="StorableItem_MediKit" ID="8" ItemType="2" GUIIconIndex ="9"  WorldModel="1" StackSize ="10" LootRarity = "4" LootContainers = "0">
+    <Language name="English">
+      <Description Text="A Item that Heal you full."/>
+      <DisplayName Text="MediKit"/>
+    </Language>
+    <Language name="German">
+      <Description Text="Ein Item das dich komplett heilt."/>
+      <DisplayName Text="MediKit"/>
+    </Language>
+  </StorableItem>
+
+  <StorableItem StorableItemName="StorableItem_Bandage" ID="9" ItemType="2" GUIIconIndex ="10"  WorldModel="1" StackSize ="10" LootRarity = "3" LootContainers = "0">
+    <Language name="English">
+      <Description Text="A Item that Heal you"/>
+      <DisplayName Text="Bandage"/>
+    </Language>
+    <Language name="German">
+      <Description Text="Ein Item das dich heilt."/>
+      <DisplayName Text="Bandage"/>
+    </Language>
+  </StorableItem>
+	
+	<StorableItem StorableItemName="StorableItem_PlayerLootContainer1" ID="10" ItemType="2" GUIIconIndex ="5" WorldModel="1" StackSize ="1" LootRarity = "2" LootContainers = "0">
+		<Language name="English">
+			<Description Text="A box for storing loot"/>
+			<DisplayName Text="Loot Container"/>
+		</Language>
+		<Language name="German">
+			<Description Text="Eine Kiste um Ausrüstung zu lagern"/>
+			<DisplayName Text="Kiste"/>
+		</Language>
+	</StorableItem>
+	
+	<StorableItem StorableItemName="StorableItem_Mattress1" ID="11" ItemType="2" GUIIconIndex ="5" WorldModel="1" StackSize ="1" LootRarity = "3" LootContainers = "0">
+		<Language name="English">
+			<Description Text="A way to save a spawnpoint"/>
+			<DisplayName Text="Mattress"/>
+		</Language>
+		<Language name="German">
+			<Description Text="Eine Möglichkeit um einen Spawn-Punkt zu speichern"/>
+			<DisplayName Text="Matratze"/>
+		</Language>
+	</StorableItem>
+	
+	<StorableItem StorableItemName="StorableItem_Berry1" ID="12" ItemType="2" GUIIconIndex ="5" WorldModel="1" StackSize ="20" LootRarity = "0" LootContainers = "0">
+		<Language name="English">
+			<Description Text="Eatable berries"/>
+			<DisplayName Text="Berries"/>
+		</Language>
+		<Language name="German">
+			<Description Text="Essbare Beeren"/>
+			<DisplayName Text="Beeren"/>
+		</Language>
+	</StorableItem>
+	
+	<StorableItem StorableItemName="StorableItem_WaterBottle" ID="13" ItemType="2" GUIIconIndex ="5" WorldModel="1" StackSize ="3" LootRarity = "0" LootContainers = "0">
+		<Language name="English">
+			<Description Text="A bottle filled with water"/>
+			<DisplayName Text="Water bottle"/>
+		</Language>
+		<Language name="German">
+			<Description Text="Eine Flasche, die mit Wasser gefüllt ist"/>
+			<DisplayName Text="Wasserflasche"/>
+		</Language>
+	</StorableItem>
+	
+</ItemsStorable>

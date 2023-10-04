@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2686e09ec7aef44bad2843e4416f057, type: 3}
+  m_Name: NM_SSSSettings_Skin_NM Foliage
+  m_EditorClassIdentifier: 
+  profile:
+    name: NM Foliage
+    scatteringDistance: {r: 1.1353015, g: 1.1353015, b: 1.1353015, a: 1}
+    transmissionTint: {r: 2.9803922, g: 2.9960785, b: 2.6352942, a: 1}
+    texturingMode: 0
+    transmissionMode: 1
+    thicknessRemap: {x: 0, y: 3.2844071}
+    worldScale: 1
+    ior: 1
+    hash: 1078267918
+  m_Version: 1
+  profiles: []

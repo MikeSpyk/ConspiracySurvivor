@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6866307238864712475
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6866307238864712474}
+  - component: {fileID: 6866307238864712477}
+  m_Layer: 0
+  m_Name: Client Settings Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6866307238864712474
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6866307238864712475}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6866307238864712477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6866307238864712475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 065e9aafebf9cd94aae76f467154cfb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_primaryActionKey: 323
+  m_secondaryActionKey: 324
+  m_reloadKey: 114
+  m_inventoryKey: 9
+  m_useKey: 101
+  m_hotbarItem1Key: 49
+  m_hotbarItem2Key: 50
+  m_hotbarItem3Key: 51
+  m_hotbarItem4Key: 52
+  m_hotbarItem5Key: 53
+  m_hotbarItem6Key: 54
+  m_shadowQuality: 2
+  m_shadowResolution: 3
+  m_shadowProjection: 0
+  m_shadowDistance: 700
+  m_shadowCascades: 4
+  m_masterTextureLimit: 0
+  m_language: 10
+  m_viewDistance: 1000
+  m_multipleCameraMode: 0
+  m_DEBUG_ApplyEverything: 0

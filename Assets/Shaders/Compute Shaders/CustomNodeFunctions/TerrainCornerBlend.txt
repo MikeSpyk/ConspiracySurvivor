@@ -1,0 +1,10 @@
+#ifndef MYHLSLINCLUDE_INCLUDED
+#define MYHLSLINCLUDE_INCLUDED
+
+void TerrainCornerBlend_float (float4 ColorA, float4 ColorB, float4 ColorC, float4 ColorD, float2 UV, out float4 Output)
+{
+	Output = float4(1,1,1,1)
+	
+}
+
+#endif

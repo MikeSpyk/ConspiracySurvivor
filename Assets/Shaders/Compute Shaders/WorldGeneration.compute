@@ -1,0 +1,120 @@
+﻿// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+#pragma kernel createMountainSpike
+#pragma kernel smoothArray
+#pragma kernel moveAndFixedSmoothArrays
+// Create a RenderTexture with enableRandomWrite flag and set it
+// with cs.SetTexture
+RWTexture2D<float4> Result;
+
+RWStructuredBuffer<float> smoothMapInput;
+RWStructuredBuffer<float> smoothMapOutput;
+RWStructuredBuffer<float> smoothMapFixed;
+//RWStructuredBuffer<float> smoothWaitInput;
+//RWStructuredBuffer<float> smoothWaitFixed;
+int ArraySizeX;
+
+int mountainOriginX;
+int mountainOriginY;
+int mountainArmsCount;
+
+float mountainRadius;
+float mountainEdgeLength;
+float mountainArmRadius;
+
+RWStructuredBuffer<float2> dataBuffer;
+
+RWStructuredBuffer<float> mountainCircleCurve;
+int mountainCircleCurveLength;
+
+RWStructuredBuffer<float> mountainCircleArmCurve;
+int mountainCircleArmCurveLength;
+
+int smoothIndex(int indexX, int indexY)
+{
+	return indexX + indexY * ArraySizeX;
+}
+
+float2 findClosesMountainArm(float2 origin)
+{
+	float lowestVecDistance = 1000000000;
+	float currentDistance;
+	int indexClosest = 0;
+
+	for(int i = 0; i < mountainArmsCount; i++)
+	{
+		currentDistance = distance(dataBuffer[i], origin);
+		if(currentDistance < lowestVecDistance)
+		{
+			lowestVecDistance = currentDistance;
+			indexClosest = i;
+		}
+	}
+	return dataBuffer[indexClosest];
+}
+
+float distanceToLine(float2 lineOrigin, float2 lineDir, float2 pointPos)
+{
+	return length(cross(float3(lineDir.x,0, lineDir.y), float3(pointPos.x,0,pointPos.y) - float3(lineOrigin.x,0,lineOrigin.y) ));
+}
+
+[numthreads(8,8,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+	// TODO: insert actual code here!
+
+	Result[id.xy] = float4((float)id.x/256, (float)id.y/256, 0,0);
+}
+
+[numthreads(8,8,1)]
+void createMountainSpike(uint3 id : SV_DispatchThreadID)
+{
+	float2 mountainOrigin = float2(mountainOriginX,mountainOriginY); // should be a global variable
+	float2 currentPos = float2(id.x,id.y);
+	float vecDistance = distance(currentPos, mountainOrigin);
+
+	float2 currentArmEnd = findClosesMountainArm(currentPos);
+	float2 armVecDir = normalize(currentArmEnd - mountainOrigin);
+
+	float distanceToArm = distanceToLine(currentArmEnd, armVecDir, currentPos);
+
+	if(vecDistance < mountainRadius)
+	{
+		float height = mountainCircleCurve[ (int)((1.0- vecDistance/mountainRadius) * (mountainCircleCurveLength-1))];
+		Result[id.xy] =  float4(height,height,height,0) ;
+
+		if(distanceToArm < mountainArmRadius)
+		{
+			float armDirDistance = sqrt( pow(distance(currentArmEnd, currentPos), 2) - pow(distanceToArm, 2));
+			float armHeight =  mountainCircleArmCurve[(int)((1.0- distanceToArm/mountainArmRadius) * (armDirDistance/mountainRadius) 			* (mountainCircleArmCurveLength-1)		)];
+			Result[id.xy] = max(  float4(armHeight,armHeight,armHeight,0) , Result[id.xy]);
+		}
+	}
+
+	//Result[id.xy] = float4((float)id.x/256, (float)id.y/256, 0,0);
+}
+
+[numthreads(8,8,1)]
+void smoothArray(uint3 id : SV_DispatchThreadID)
+{
+	smoothMapOutput[smoothIndex(id.x+1,id.y+1)] = ( smoothMapInput[smoothIndex(id.x,id.y+1)]
+																			+smoothMapInput[smoothIndex(id.x+1,id.y)]
+																			+smoothMapInput[smoothIndex(id.x+2,id.y+1)]
+																			+smoothMapInput[smoothIndex(id.x+1,id.y+2)]) /4 ;
+	//smoothWaitInput[0] = 1;
+}
+
+[numthreads(8,8,1)]
+void moveAndFixedSmoothArrays(uint3 id : SV_DispatchThreadID)
+{
+	if(smoothMapFixed[smoothIndex(id.x,id.y)] > 0.0	)
+	{
+		smoothMapInput[smoothIndex(id.x,id.y)] = max( smoothMapFixed[smoothIndex(id.x,id.y)], smoothMapOutput[smoothIndex(id.x,id.y)] );
+	}
+	else
+	{
+		smoothMapInput[smoothIndex(id.x,id.y)] = smoothMapOutput[smoothIndex(id.x,id.y)];
+	}
+	//smoothWaitFixed[0] = 1;
+}
+

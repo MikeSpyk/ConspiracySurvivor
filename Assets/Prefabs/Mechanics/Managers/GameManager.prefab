@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3626298240217196490
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3626298240217196488}
+  - component: {fileID: 3626298240217196491}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3626298240217196488
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3626298240217196490}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3626298240217196491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3626298240217196490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 468835fc86d061b48998494a1cb2b575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameVersion: 0.0.1.0
+  m_projectileMaxVisibleDistance: 1000
+  m_playerPrefab: {fileID: 1158540987881794, guid: 13e92c2bfc00e674e8d9a934a7591b03,
+    type: 3}
+  m_externalPlayerPrefab: {fileID: 1549416562819968, guid: 6def2cf8e452f5548b936250f370c574,
+    type: 3}
+  m_server_timeSpawnSend: 0.1
+  m_DEBUG_SetServer: 0
+  m_currentRole: 3
+  DEBUG_createSaveFileNow: 0
+  DEBUG_startFromSaveFileNow: 0
+  m_saveFileDirectory: \SaveFiles\
+  m_saveFileName: Game.save
+  m_autoSaveFileInterval: 300
+  m_playerStartItems:
+  - {x: 0, y: 1}
+  - {x: 11, y: 1}
+  - {x: 4, y: 1}
